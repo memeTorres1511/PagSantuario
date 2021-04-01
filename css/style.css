@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.header{
+    height: 100vh;
+    /* background-image: linear-gradient(-225deg, rgba(183, 248, 219, 0.4) 0%, rgba(80, 167, 194, 0.4) 100%), url(../img/portada.jpg); */
+    background: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: teal;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-iglesia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-iglesia img{
+    width: 50%;
+}
+
+.slider-iglesia{
+    width: 100%;
+}
+
+.slider-slide{
+    width: 150%;
+}
+
+#evangelio{
+    background: #e4e4e4;
+}
+
+
+.contenedor-evangelio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-evangelio img{
+    width: 40%;
+}
+
+.evangelio-evangelio{
+    width: 45%;
+}
+
+.evangelio-evangelio p{
+    font-size: 18px;
+}
+
+.textoEvan1{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.textoEvan{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.textoEvan2{
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contenedor-somos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-somos img{
+    width: 40%;
+}
+
+.live-somos{
+    width: 45%;
+}
+
+.who{
+    margin-bottom: 20px;
+}
+
+.n-somos{
+    margin-bottom: 7px;
+    color: teal;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.trabajo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #e4e4e4;
+    margin-top: 30px;
+}
+
+.cont-trabajo{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-trabajo img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.cont-trabajo h3{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .grid{
+    position: relative;
+    width: 100%;
+}
+
+.grid .item{
+    position:absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.33333% - 20px);
+}
+
+.grid .item-contenido{
+    position: relative;
+}
+
+.item-contenido img{
+    width: 45%;
+}
+
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vw;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.overlay.activo{
+   display: flex;
+}
+
+.overlay img{
+    max-width: 100%;
+}
+
+.overlay .descripcion{
+    display: block;
+    background: rgba(0, 0, 0, 0.01);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-height: -100px;
+}
+
+.contenedor-gridimg{
+    position: relative;
+}
+
+.contenedor-gridimg img{
+    width: 60%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contenedor-gridimg p{
+    margin-top: 500px;
+}
+
+.overlay #btn-cerrar-popup{
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -400px;
+    top: 15px;
+}
+
+.galeria img{
+    box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.materialbox-caption{
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.data-caption{
+    display: flex;
+    justify-content: left;
+} */
+
+.galeria .col{
+    margin-bottom: 20px;
+}
+
+
+
+.contenedor-trabajo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-trabajo__n{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.contenedor-trabajo__n h4{
+    text-align: center;
+}
+
+.img-trabajo{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    position: relative;
+    object-fit: cover;
+    width: 35%;
+    border-radius: 10px;
+    border-radius: 10px;
+    transition: transform .3s .2s;
+    margin-right: 10px;
+}
+
+.info{
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.multimedia-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multimedia{
+    margin-bottom: 40px;
+}
+
+.guias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cont-guias{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-guias img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.cont-guias h3{
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer{
+    background: teal;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: teal;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-iglesia{
+        /* width: 100%; */
+        margin-bottom: 60px;
+    }
+
+    .contenedor-iglesia img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .slider-iglesia{
+        width: 800%;
+    }
+
+    .slider-slide{
+        width: 500%;
+        margin-bottom: 0;
+    }
+
+    .slider-slide img{
+        width: 800%;
+    }
+
+    .contenedor-evangelio img{
+        width: 80%;
+    }
+
+    .evangelio-evangelio{
+        width: 80%;
+    }
+
+    .contenedor-somos img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .live-somos{
+        width: 80%;
+    }
+
+    .who{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-trabajo{
+        width: 45%;
+    }
+
+    .contenedor-trabajo__n{
+        width: 45%;
+    }
+
+    .cont-guias{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+
+    .contenedor-iglesia{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .slider-slide{
+        width: 300px;
+    }
+
+    .slider-slide img{
+        width: 80%;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-trabajo{
+        width: 95%;
+    }
+
+    .contenedor-trabajo__n{
+        width: 95%;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .contact-us{
+        width: 90%;
+    }
+}

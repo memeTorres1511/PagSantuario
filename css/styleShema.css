@@ -6,7 +6,7 @@
 
 body {
     font-family: 'open sans';
-    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
 }
 
 .contenedor {
@@ -31,11 +31,11 @@ header {
     height: 600px;
     background: #bc4e9c;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/shema.jpg);
+    background:  url(../img/Shema/retiroComu.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/shema.jpg);
+    background:  url(../img/Shema/retiroComu.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size:contain;
+    background-size:cover;
     background-attachment: fixed;
     position: relative;
 }
@@ -85,21 +85,51 @@ header .textos-header{
 
 /* About us */
 
+#nosotros{
+    background: red;
+}
+
 main .sobre-nosotros{
-    padding: 30px 0 60px 0;
+    width: 100%;
+}
+
+#nosotros{
+    background: rgb(56, 152, 236);
+}
+
+.nosotros h2{
+    color: #fff;
+}
+.contenedor sobre-nosotros{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .contenedor-sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .imagen-about-us{
-    width: 48%;
+    width: 40%;
+    margin-bottom: 50px;
 }
 
-.sobre-nosotros .contenido-textos{
-    width: 48%;
+.contenido-textos{
+    width: 45%;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: 300;
+    color: teal;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 40px;
 }
 
 .contenido-textos h3{

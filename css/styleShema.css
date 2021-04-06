@@ -46,10 +46,12 @@ nav{
 }
 
 nav > a{
-    color:#fff;
-    font-weight: 300;
+    color:black;
+    font-weight: 800;
     text-decoration: none;
     margin-right: 10px;
+    font-size: 20px;
+    text-shadow: blanchedalmond;
 }
 
 nav > a:hover{

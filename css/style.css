@@ -27,7 +27,7 @@ body{
 .header{
     height: 100vh;
     /* background-image: linear-gradient(-225deg, rgba(183, 248, 219, 0.4) 0%, rgba(80, 167, 194, 0.4) 100%), url(../img/portada.jpg); */
-    background: url(../img/portada.jpg);
+    background: url(../img/cap1.png);
     background-repeat: no-repeat;
     background-size:contain;
     width:100%;

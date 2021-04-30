@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.volver{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.volver a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagen-container{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.imagen-container img{
+    /* padding: 95px; */
+    padding-top: 20px;
+    width: 700px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+footer{
+    background: teal;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: teal;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+
+    .imagen-container{
+        align-content: center;
+        align-items: center;
+        display: block;
+        
+    }
+    .imagen-container img{
+        padding: 15px;
+        width: 400px;
+        height: 300px;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
